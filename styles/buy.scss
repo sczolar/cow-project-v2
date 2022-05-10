@@ -1,0 +1,49 @@
+.listprodect {
+  .buy-list {
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform: translate(0px, -10px);
+      box-shadow: 5px 5px 5px rgb(133, 133, 133);
+    }
+  }
+}
+
+.buy-product {
+  display: flex;
+
+  .buy-body {
+    background-color: #01e6a111;
+    margin: 20px;
+    width: 45%;
+    .buy-paper {
+      margin: 10px;
+      text-transform: capitalize;
+      button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 200px;
+        margin: 10px;
+        padding: 10px 20px;
+        text-transform: capitalize;
+        border-radius: 10px;
+        background-color: $loginbg;
+        font-weight: 600;
+        font-size: 20px;
+        box-shadow: 0 0 5px #01e6a1;
+      }
+    }
+  }
+  .buy-body:nth-child(1) {
+      width: fit-content;
+     
+    .buy-paper:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+    }
+  }
+}

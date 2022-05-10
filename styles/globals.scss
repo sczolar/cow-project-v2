@@ -1,3 +1,7 @@
+@import "login.scss";
+@import "home.scss";
+@import "buy.scss";
+@import "sell.scss";
 html,
 body {
   padding: 0;
@@ -13,4 +17,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.loader {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
