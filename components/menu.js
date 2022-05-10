@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { Context } from "../pages/_app"
 import Link from "next/link"
 
-export default function menu() {
+export default function Menu() {
     const { value } = useContext(Context);
     return (
         <>

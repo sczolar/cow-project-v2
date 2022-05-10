@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
   const [value, dispatch] = useReducer(Reducer, Reducervalue);
   useEffect(() => {
     Loginchecker(value, dispatch, router);
-  }, []);
+  }, [router, value, dispatch]);
   Router.events.on("routeChangeStart", (url) => {
     dispatch({ type: "loading" });
   });
