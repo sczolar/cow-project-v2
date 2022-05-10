@@ -2,6 +2,7 @@
 @import "home.scss";
 @import "buy.scss";
 @import "sell.scss";
+
 html,
 body {
   padding: 0;
@@ -18,6 +19,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
 .loader {
   width: 100%;
   background-color: rgb(255, 255, 255);
@@ -26,4 +28,41 @@ a {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.menu-header {
+  background-color: #333;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  z-index: 2;
+  &>* {
+    display: flex;
+    align-items: center;
+    &>* {
+      margin-left: 10px;
+    }
+  }
+
+  .menu-menu {
+    &>* {
+      width: 100px;
+      text-align: center;
+      border-radius: 4px;
+      padding: 4px;
+      transition: 0.5s;
+      &:hover{
+        color: #9b9b9b;
+      }
+    }
+  }
 }

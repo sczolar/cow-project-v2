@@ -9,69 +9,86 @@
     flex-direction: column
 }
 
+
+
 $loginbg :#00ddb3;
 
-.login {
-    @include center-col;
-    width: 100%;
-    height: 100vh;
-    background-image: url('/loginbg.jpg');
-    background-position: 80% 20%;
-    background-size: cover;
-
-    .error-msg {
-        background-color: rgba(255, 99, 71, 0.479);
-        padding: 10px 20px;
-        border-radius: 7px;
-        margin: 20px;
-        text-transform: capitalize;
-        font-weight: 600;
-        backdrop-filter: blur(5px);
+.container-login100{
+    background-image: url("/bg.jpg");
+    justify-content: end;
+    .wrap-login100{
+        background-color: rgba(0, 0, 0, 0.185);
+        backdrop-filter: blur(7px);
+        color: white;
     }
-
-    .login-body {
-        color: rgb(14, 14, 14);
-        backdrop-filter: blur(5px);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: -1px 1px 5px rgb(77, 77, 77);
-        @include center-col;
-
-        h1 {
-            position: relative;
-
-            &:before {
-                content: '';
-                position: absolute;
-                width: 40px;
-                height: 4px;
-                background-color: $loginbg;
-                bottom: -5px;
-                border-radius: 2px;
-            }
-        }
-
-        form {
-            @include center-col;
-            color: whitesmoke;
-
-            &>* {
-                margin-top: 20px;
-            }
-
-            .loginbtn {
-                background-color: $loginbg;
-                color: black;
-                font-weight: 600;
-            }
-
-            .login-text {
-                color: white;
-            }
-
-            label {
-                font-weight: 600;
-            }
-        }
+    .label-input100{
+        font-weight: 600;
+        font-size: 17px;
     }
 }
+// .login {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100vh;
+//     // background-image: url('/bg.jpg');
+//     background-position: 80% 50%;
+//     background-size: cover;
+//     .error-msg {
+//         background-color: rgba(255, 99, 71, 0.479);
+//         padding: 10px 20px;
+//         border-radius: 7px;
+//         margin: 20px;
+//         text-transform: capitalize;
+//         font-weight: 600;
+//         backdrop-filter: blur(5px);
+//     }
+//     .login-body {
+//         margin-right: 50px;
+//         color: rgb(255, 255, 255);
+//         backdrop-filter: blur(5px);
+//         padding: 30px;
+//         border-radius: 10px;
+//         width: 400px;
+//         height: 80vh;
+//         border: 1px solid gray;
+//         @include center-col;
+//         h1 {
+//             position: relative;
+
+//             &:before {
+//                 content: '';
+//                 position: absolute;
+//                 width: 40px;
+//                 height: 4px;
+//                 background-color: $loginbg;
+//                 bottom: -5px;
+//                 border-radius: 2px;
+//             }
+//         }
+
+//         form {
+//             @include center-col;
+//             color: whitesmoke;
+
+//             &>* {
+//                 margin-top: 20px;
+//             }
+
+//             .loginbtn {
+//                 background-color: $loginbg;
+//                 color: black;
+//                 font-weight: 600;
+//             }
+
+//             .login-text {
+//                 color: white;
+//             }
+
+//             label {
+//                 font-weight: 600;
+//             }
+//         }
+//     }
+// }

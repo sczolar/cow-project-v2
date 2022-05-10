@@ -47,6 +47,54 @@
       "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
       "dlist":["!","2","34","56","78"],
       "price":10000
+    },
+    {
+      "id": 7,
+      "link": "cow1.jpg",
+      "name":"jalabula jangu",
+      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
+      "dlist":["!","2","34","56","78"],
+      "price":10000
+    },
+    {
+      "id": 8,
+      "link": "cow2.jpg",
+      "name":"jalabula jangu",
+      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
+      "dlist":["!","2","34","56","78"],
+      "price":10000
+    },
+    {
+      "id": 9,
+      "link": "cow3.jpg",
+      "name":"jalabula jangu",
+      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
+      "dlist":["!","2","34","56","78"],
+      "price":10000
+    },
+    {
+      "id": 10,
+      "link": "cow4.jpg",
+      "name":"jalabula jangu",
+      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
+      "dlist":["!","2","34","56","78"],
+      "price":10000
+    },
+    {
+      "id": 11,
+      "link": "cow5.webp",
+      "name":"jalabula jangu",
+      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
+      "dlist":["!","2","34","56","78"],
+      "price":10000
+    },
+    {
+      "id": 12,
+      "link": "cow6.jpg",
+      "name":"jalabula jangu",
+      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
+      "dlist":["!","2","34","56","78"],
+      "price":10000
     }
   ]
 }

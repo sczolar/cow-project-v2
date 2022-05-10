@@ -1,22 +1,27 @@
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import { useState, useContext } from "react";
+import { useState, useContext, forwardRef } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { Context } from "../pages/_app";
 import Loader from "../components/loader";
+import MuiAlert from '@mui/material/Alert';
+import Snackbar from '@mui/material/Snackbar';
+
+const Alert = forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 export default function Login() {
   const { value, dispatch } = useContext(Context);
   const router = useRouter();
   const [login, setlogin] = useState({ username: "", password: "" });
-  console.log(value);
   //onchange handler for the value change
   const loginhandler = (e) => {
+    dispatch({ type: "clear" })
     setlogin({ ...login, [e.target.name]: e.target.value });
   };
   //while submit the value what would happen
-  const submithandler = async () => {
+  const submithandler = async (e) => {
+    e.preventDefault();
     const { username, password } = login;
     if (username && password) {
       try {
@@ -47,45 +52,99 @@ export default function Login() {
   if (value.loading) {
     return <Loader />;
   }
+  // return (
+  //   <div classNameName="login">
+  //     <Head>
+  //       <title>Login</title>
+  //       <meta name="description" content="login page" />
+  //     </Head>
+  //     {value.errorStatus && <span classNameName="error-msg">{value.error}</span>}
+  //     <div classNameName="login-body">
+  //       <h1>login</h1>
+  //       <form>
+  //         <TextField
+  //           label="Username"
+  //           variant="standard"
+  //           name="username"
+  //           onChange={loginhandler}
+  //           value={login.username}
+  //           type="text"
+  //           color="primary"
+  //           classNameName="login-text"
+  //         />
+  //         <TextField
+  //           label="Password"
+  //           variant="standard"
+  //           name="password"
+  //           onChange={loginhandler}
+  //           value={login.password}
+  //           type="password"
+  //           color="primary"
+  //           classNameName="login-text"
+  //         />
+  //         <Button
+  //           classNameName="loginbtn"
+  //           variant="contained"
+  //           onClick={submithandler}
+  //         >
+  //           Login
+  //         </Button>
+  //       </form>
+  //     </div>
+  //   </div>
+  // );
   return (
-    <div className="login">
-      <Head>
-        <title>Login</title>
-        <meta name="description" content="login page" />
-      </Head>
-      {value.errorStatus && <span className="error-msg">{value.error}</span>}
-      <div className="login-body">
-        <h1>login</h1>
-        <form>
-          <TextField
-            label="Username"
-            variant="standard"
-            name="username"
-            onChange={loginhandler}
-            value={login.username}
-            type="text"
-            color="primary"
-            className="login-text"
-          />
-          <TextField
-            label="Password"
-            variant="standard"
-            name="password"
-            onChange={loginhandler}
-            value={login.password}
-            type="password"
-            color="primary"
-            className="login-text"
-          />
-          <Button
-            className="loginbtn"
-            variant="contained"
-            onClick={submithandler}
-          >
+    <div className="container-login100">
+      <div className="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+        <form className="login100-form validate-form" method="post" onSubmit={submithandler}>
+          {value.errorStatus &&
+              <Alert className="error-msg" severity="error">{value.error}</Alert>
+          }
+          <span className="login100-form-title p-b-49 text-white">
             Login
-          </Button>
+          </span>
+          <div className="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
+            <span className="label-input100 text-white">Username</span>
+            <input
+              className="input100"
+              type="text"
+              value={login.username}
+              onChange={loginhandler}
+              name="username"
+              placeholder="Type your username"
+            />
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input" data-validate="Password is required">
+            <span className="label-input100 text-white">Password</span>
+            <input
+              className="input100"
+              type="password"
+              value={login.password}
+              onChange={loginhandler}
+              name="password"
+              placeholder="Type your password"
+            />
+            <span className="focus-input100" data-symbol="&#xf190;"></span>
+          </div>
+
+          <div className="text-right p-t-8 p-b-31">
+            <a href="#">
+              Forgot password?
+            </a>
+          </div>
+
+          <div className="container-login100-form-btn">
+            <div className="wrap-login100-form-btn">
+              <div className="login100-form-bgbtn"></div>
+              <button className="login100-form-btn" type="submit">
+                Login
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
-  );
+  )
 }

@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 
 export default function ListProduct({ list }) {
   const product = list.list[0];
-  console.log(product);
   return (
     <>
       <Grid container className="buy-product">

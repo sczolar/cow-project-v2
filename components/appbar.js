@@ -22,7 +22,6 @@ const ll = [
   { name: "Home", icon: <HomeIcon />, link: "/home" },
   { name: "Buy", icon: <ShoppingCartIcon />, link: "/buy" },
   { name: "Sell", icon: <SellIcon />, link: "/sell" },
-  { name: "Auction", icon: <AutoAwesomeIcon />, link: "/auction" },
 ];
 
 export default function ButtonAppBar(props) {
