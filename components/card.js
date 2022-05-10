@@ -12,7 +12,7 @@ export default function ImgMediaCard({ link }) {
     return (
         <Card sx={{ maxWidth: 300 }}>
             <CardMedia height="140">
-                <Image src={`/${link}`} width="300" height="220"></Image>
+                <Image src={`/${link}`} width="300" height="220" alt="cow"></Image>
             </CardMedia>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">

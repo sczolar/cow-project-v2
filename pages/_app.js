@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
   const [value, dispatch] = useReducer(Reducer, Reducervalue);
   useEffect(() => {
     Loginchecker(value, dispatch, router);
-  }, [router, value, dispatch]);
+  }, []);
   Router.events.on("routeChangeStart", (url) => {
     dispatch({ type: "loading" });
   });
@@ -50,7 +50,7 @@ function MyApp({ Component, pageProps }) {
           ""
         ) : (
           // <AppBar name={value.username} dispatch={dispatch} />
-          <Menu />
+          <Menu dispatch={dispatch} />
         )}
         <Component {...pageProps} />
       </Context.Provider>

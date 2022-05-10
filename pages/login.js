@@ -1,10 +1,8 @@
 import { useState, useContext, forwardRef } from "react";
 import { useRouter } from "next/router";
-import Head from "next/head";
 import { Context } from "../pages/_app";
 import Loader from "../components/loader";
 import MuiAlert from '@mui/material/Alert';
-import Snackbar from '@mui/material/Snackbar';
 
 const Alert = forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -52,47 +50,6 @@ export default function Login() {
   if (value.loading) {
     return <Loader />;
   }
-  // return (
-  //   <div classNameName="login">
-  //     <Head>
-  //       <title>Login</title>
-  //       <meta name="description" content="login page" />
-  //     </Head>
-  //     {value.errorStatus && <span classNameName="error-msg">{value.error}</span>}
-  //     <div classNameName="login-body">
-  //       <h1>login</h1>
-  //       <form>
-  //         <TextField
-  //           label="Username"
-  //           variant="standard"
-  //           name="username"
-  //           onChange={loginhandler}
-  //           value={login.username}
-  //           type="text"
-  //           color="primary"
-  //           classNameName="login-text"
-  //         />
-  //         <TextField
-  //           label="Password"
-  //           variant="standard"
-  //           name="password"
-  //           onChange={loginhandler}
-  //           value={login.password}
-  //           type="password"
-  //           color="primary"
-  //           classNameName="login-text"
-  //         />
-  //         <Button
-  //           classNameName="loginbtn"
-  //           variant="contained"
-  //           onClick={submithandler}
-  //         >
-  //           Login
-  //         </Button>
-  //       </form>
-  //     </div>
-  //   </div>
-  // );
   return (
     <div className="container-login100">
       <div className="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">

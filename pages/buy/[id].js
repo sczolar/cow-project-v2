@@ -10,7 +10,7 @@ export default function ListProduct({ list }) {
       <Grid container className="buy-product">
         <Grid item className="buy-body">
           <Paper elevation={0} className="buy-paper">
-            <Images className="buy-img" src={"/" + product.link} width={600} height={600}/>
+            <Images alt="cow" className="buy-img" src={"/" + product.link} width={600} height={600}/>
           </Paper>
         </Grid>
         <Grid className="buy-body">
