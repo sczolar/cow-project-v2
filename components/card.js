@@ -21,7 +21,7 @@ export default function ImgMediaCard(props) {
                     {name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    {detail}
+                    {detail.slice(0,140)}
                 </Typography>
             </CardContent>
             <CardActions>
