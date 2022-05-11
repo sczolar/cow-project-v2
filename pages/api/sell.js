@@ -39,7 +39,7 @@ handler.post(async (req, res) => {
     let link = "/uploads/"+req.file.filename;
     const list = await new List({ name, price, detail, dlist, link })
     list.save()
-    // res.redirect("/buy");
+    res.redirect("/buy");
     res.status(200).send({
       success: true, list
     });
