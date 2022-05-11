@@ -55,10 +55,10 @@ export default function ListProduct({ list, negolist }) {
 
 export async function getServerSideProps(context) {
   const { id } = context.params;
-  const list = await fetch(`${process.env.api}/api/list/${id}`).then((res) =>
+  const list = await fetch(`/api/list/${id}`).then((res) =>
     res.json()
   );
-  const negolist = await fetch(`${process.env.api}/api/negotiateget?id=${id}`).then((res) =>
+  const negolist = await fetch(`/api/negotiateget?id=${id}`).then((res) =>
     res.json()
   );
   return {
