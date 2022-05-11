@@ -22,13 +22,13 @@ export default function Menuu(props) {
                     <Link href="/buy">buy</Link>
                     <Link href="/sell">sell</Link>
                     <Link href="/map">map</Link>
-                    <Link href="/login" onClick={() => {
-                        document.cookie = "token=";
-                        props.dispatch({ type: "clear" });
-                        router.push("/login");
-                    }}>
+                    <Link href="/login" >
                         <Tooltip title="logout">
-                            <LogoutIcon />
+                            <LogoutIcon onClick={() => {
+                                document.cookie = "token=";
+                                props.dispatch({ type: "clear" });
+                                router.push("/login");
+                            }} />
                         </Tooltip>
                     </Link>
                 </div>

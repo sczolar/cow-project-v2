@@ -9,7 +9,7 @@ export default function Buy({ images }) {
     <>
       <Grid container justifyContent="center" className="listprodect">
         {images.map((a) => (
-          <Link key={a.id} href={`/buy/${a.id}`}>
+          <Link key={a._id} href={`/buy/${a._id}`}>
             <Grid  item className="buy-list">
               <Cards {...a} className="buy-card" />
             </Grid>

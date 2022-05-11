@@ -8,24 +8,25 @@ import Typography from '@mui/material/Typography';
 import Image from "next/image"
 
 
-export default function ImgMediaCard({ link }) {
+export default function ImgMediaCard(props) {
+    console.log(props)
+    const { link,detail,price,name } = props
     return (
         <Card sx={{ maxWidth: 300 }}>
             <CardMedia height="140">
-                <Image src={`/${link}`} width="300" height="220" alt="cow"></Image>
+                <Image src={`${link}`} width="300" height="220" alt="cow"></Image>
             </CardMedia>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    {name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    {detail}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button size="small">Buy</Button>
+                <Button size="small">View more</Button>
             </CardActions>
         </Card>
     );

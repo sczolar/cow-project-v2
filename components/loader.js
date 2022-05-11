@@ -5,7 +5,7 @@ export default function Loading() {
   return (
     <div className="loader">
       <div>
-        <Image src={Loader} width="100" height="100" />
+        <Image alt="loading..." src={Loader} width="100" height="100" />
       </div>
     </div>
   );
