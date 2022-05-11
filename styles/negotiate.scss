@@ -1,0 +1,65 @@
+.negotiate-container {
+  background-color: #dd5e4b;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  @include center;
+  form {
+    width: 500px;
+    background-color: #b7b7b75d;
+    padding: 20px 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    color: whitesmoke;
+    h1{
+        text-align: center;
+    }
+    input[type="submit"] {
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: capitalize;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        padding: 5px 20px;
+        background-color: #272727;
+        color: white;
+        border-radius: 5px;
+      }
+    .sell-input {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      label {
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > * {
+          margin-left: 5px;
+        }
+      }
+      
+      input,
+      textarea {
+        border: none;
+        outline: none;
+        height: 40px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.352);
+        font-weight: 600;
+      }
+      textarea {
+        height: 150px;
+        resize: none;
+      }
+    }
+  }
+}

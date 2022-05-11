@@ -2,6 +2,8 @@
 @import "home.scss";
 @import "buy.scss";
 @import "sell.scss";
+@import "map.scss";
+@import "negotiate.scss";
 
 html,
 body {
@@ -45,32 +47,32 @@ a {
   color: rgb(255, 255, 255);
   font-weight: 600;
   z-index: 2;
-  &>* {
+  & > * {
     display: flex;
     align-items: center;
-    &>* {
+    & > * {
       margin-left: 10px;
     }
   }
 
   .menu-menu {
-    &>* {
+    & > * {
       width: 100px;
       text-align: center;
       border-radius: 4px;
       padding: 4px;
       transition: 0.5s;
-      &:hover{
+      &:hover {
         color: #9b9b9b;
       }
     }
   }
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }

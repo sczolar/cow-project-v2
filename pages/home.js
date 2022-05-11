@@ -9,7 +9,10 @@ export default function Home({ images }) {
     <>
       <div className="home-container">
         <div className="home-intro">
-
+          <div className="home-welcome">
+            <span>welcome to</span>
+            <span>cow market</span>
+          </div>
         </div>
         <h1> type of cow</h1>
         <Grid

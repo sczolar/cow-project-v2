@@ -26,7 +26,7 @@ export default function ImgMediaCard(props) {
             </CardContent>
             <CardActions>
                 <Button size="small">Buy</Button>
-                <Button size="small">View more</Button>
+                {/* <Button size="small">View more</Button> */}
             </CardActions>
         </Card>
     );
