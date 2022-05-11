@@ -1,8 +1,24 @@
 .map-container {
-    position: absolute;
-    top:0;
-    left: 0;
+    background-color: #dd5e4b;
     width: 100%;
-    min-height:100vh;
-    background-color: #dd5e4b;;
+    min-height: 100vh;
+
+    h1 {
+        padding-top: 100px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.884);
+    }
+
+    .map-body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        &>*{
+            margin: 10px;
+        }
+    }
 }
