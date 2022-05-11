@@ -1,22 +1,28 @@
 .listprodect {
   margin-top: 50px;
+  background-color: #dd5e4b;
+  min-height: 100vh;
+
   .buy-list {
     margin: 10px;
     cursor: pointer;
     transition: 0.3s;
+
     &:hover {
       transform: translate(0px, -10px);
-      box-shadow: 5px 5px 5px rgb(133, 133, 133);
     }
   }
 }
+
 .buy-product {
   display: flex;
   margin-top: 50px;
+  justify-content: center;
+
   .buy-body {
     background-color: #01e6a111;
     margin: 20px;
-    width: 45%;
+    width:100%;
     .buy-paper {
       margin: 10px;
       text-transform: capitalize;
@@ -36,14 +42,34 @@
       }
     }
   }
+
   .buy-body:nth-child(1) {
-      width: fit-content;
-     
+    width: fit-content;
+
     .buy-paper:nth-child(1) {
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 20px;
+    }
+  }
+}
+
+.negolist {
+  padding: 20px;
+  text-transform: capitalize;
+
+  h2 {
+    padding: 0 0 20px 0
+  }
+
+  .nego-li {
+    display: flex;
+
+    &>* {
+      margin: 5px;
+      box-shadow: 0 0 10px rgb(155, 155, 155);
+      width: 300px;
     }
   }
 }

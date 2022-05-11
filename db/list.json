@@ -2,16 +2,15 @@
   "list": [
     {
       "id": 1,
-      "link": "cow1.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c1.webp",
+      "name":"Kangayam",
+      "details":"The milk of Kangayam cows has a high nutritious value, though it is a poor milker. However, in some cases, good milkers are also found, giving 3 to 4 litres during the peak milking period. The color of the cattle is grey or white with black markings. The breed is on the wane, due to poor government support for indigenous breeds, although individual conservative efforts are bearing some fruit. Jallikatu is a traditional sport of Tamil Nadu. This breed has participated in that sport.",
+      "dlist":["!","2","34","56","78"]
     },
     {
       "id": 2,
       "link": "cow2.jpg",
-      "name":"jalabula jangu",
+      "name":"Tiruchengodu",
       "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
       "dlist":["!","2","34","56","78"],
       "price":10000

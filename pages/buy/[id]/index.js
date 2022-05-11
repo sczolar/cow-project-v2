@@ -2,10 +2,12 @@ import Images from "next/image";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Link from "next/link";
+import Negoard from "../../../components/negocard"
 
-export default function ListProduct({ list }) {
-  console.log(list);
+export default function ListProduct({ list, negolist }) {
   const product = list.list[0];
+  const nego = negolist.list;
+  console.log(nego)
   return (
     <>
       <Grid container className="buy-product">
@@ -30,12 +32,23 @@ export default function ListProduct({ list }) {
               </ol>
             ))}
             <h2>price:{product.price}</h2>
-            <Link className="buy-btn" href={`/buy/${product._id}/negotiate`}>
+            <Link className="buy-btn" href={`/buy/${product._id}/negotiate?id=${product._id}`}>
               <button>buy</button>
             </Link>
           </Paper>
         </Grid>
       </Grid>
+      <div className="negolist">
+        <h2>negotiated list</h2>
+        <div className="nego-li">
+          {
+            nego.map(a => (
+              <Negoard key={a._id} {...a} />
+            )
+            )
+          }
+        </div>
+      </div>
     </>
   );
 }
@@ -45,7 +58,10 @@ export async function getServerSideProps(context) {
   const list = await fetch(`${process.env.api}/api/list/${id}`).then((res) =>
     res.json()
   );
+  const negolist = await fetch(`${process.env.api}/api/negotiateget?id=${id}`).then((res) =>
+    res.json()
+  );
   return {
-    props: { list },
+    props: { list, negolist },
   };
 }

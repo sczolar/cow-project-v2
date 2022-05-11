@@ -3,10 +3,9 @@
   width: 100%;
   margin-top: 50px;
   background-image: url("/bg.jpg");
-  height: 93vh;
   background-size: cover;
   background-position: 80% 30%;
-
+  min-height: 100vh;
   @include center;
   form {
     backdrop-filter: blur(5px);
@@ -17,6 +16,7 @@
     width: 500px;
     box-shadow: 0 0 10px rgb(103, 25, 25);
     color: white;
+    padding:20px;
     .page-handler {
       display: flex;
       justify-content: center;
