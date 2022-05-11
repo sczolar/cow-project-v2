@@ -1,40 +1,28 @@
-import TextField from "@mui/material/TextField";
-import { styled } from "@mui/material/styles";
-import Button from "@mui/material/Button";
-
-const Input = styled("input")({
-  display: "none",
-});
-
 export default function Sell() {
+  const onChange = async (formData) => {
+    console.log(formData)
+
+    const response = await fetch('/api/sell', {
+      method: "POST",
+      headers: { 'content-type': 'multipart/form-data' },
+      onUploadProgress: (event) => {
+        console.log(`Current progress:`, Math.round((event.loaded * 100) / event.total));
+      },
+    })
+      .then(res => res.json());
+
+    console.log('response', response.data);
+  };
   return (
     <>
       <div className="sell-container">
         <form>
-          <h2>sell your cow &#128004;</h2>
-          <TextField
-            className="sell-input"
-            variant="standard"
-            label="cow name"
+          <input
+            type="file"
+            name="sellcow"
+            label="Upload Single File"
+            onChange={onChange}
           />
-          <TextField
-            className="sell-input"
-            variant="standard"
-            label="detail describe"
-          />
-          <TextField className="sell-input" variant="standard" label="list" />
-          <TextField className="sell-input" variant="standard" label="price" />
-          <label htmlFor="contained-button-file">
-            <Input
-              accept="image/*"
-              id="contained-button-file"
-              multiple
-              type="file"
-            />
-            <Button variant="contained" component="span">
-              Upload
-            </Button>
-          </label>
         </form>
       </div>
     </>
