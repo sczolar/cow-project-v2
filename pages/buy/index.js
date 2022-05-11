@@ -10,7 +10,7 @@ export default function Buy() {
   const [images, setimages] = useState([])
   useEffect(() => {
       (async () => {
-        const data = await fetch(`${process.env.api}/api/list`).then((res) =>
+        const data = await fetch(`/api/list`).then((res) =>
           res.json()
         );
         if (data.success) {
