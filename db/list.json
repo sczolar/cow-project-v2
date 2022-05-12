@@ -3,97 +3,132 @@
     {
       "id": 1,
       "link": "c1.webp",
-      "name":"Kangayam",
-      "details":"The milk of Kangayam cows has a high nutritious value, though it is a poor milker. However, in some cases, good milkers are also found, giving 3 to 4 litres during the peak milking period. The color of the cattle is grey or white with black markings. The breed is on the wane, due to poor government support for indigenous breeds, although individual conservative efforts are bearing some fruit. Jallikatu is a traditional sport of Tamil Nadu. This breed has participated in that sport.",
-      "dlist":["!","2","34","56","78"]
+      "name": "Kangayam",
+      "details": "The milk of Kangayam cows has a high nutritious value, though it is a poor milker. However, in some cases, good milkers are also found, giving 3 to 4 litres during the peak milking period. The color of the cattle is grey or white with black markings. The breed is on the wane, due to poor government support for indigenous breeds, although individual conservative efforts are bearing some fruit. Jallikatu is a traditional sport of Tamil Nadu. This breed has participated in that sport.",
+      "dlist": [
+        "Also known as kongu and konganad.",
+        "Originated in Kangayam, Dharapuram, Perundurai, Erode, Bhavani and part of Gobichettipalayam taluk of Erode and Coimbatore district.",
+        "Bulls are grey with dark colour in hump, fore and hind quarters",
+        "The horns are spread apart, nearly straight with a slight curve backwards.",
+        "Cows are grey or white."
+      ]
     },
     {
       "id": 2,
-      "link": "cow2.jpg",
-      "name":"Tiruchengodu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c2.jpg",
+      "name": "Bargur",
+      "details": "Bargur is a breed of cattle native to the Bargur forest hills in Anthiyur Taluk of Erode District in Western Tamil Nadu in India. The cattle are usually moderate and compact in build and have brown skin with white patches, though full white and brown complexions are sometimes found",
+      "dlist": [
+        "Found around Bargur hills in Bhavani taluk of Erode district in Tamilnadu",
+        "Developed for work in uneven hilly terrains",
+        "Generally brown colour with white markings",
+        "Animals are well built, compact and medium in size",
+        "Known for their speed and endurance in trotting."
+      ]
     },
     {
       "id": 3,
-      "link": "cow3.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c3.jpg",
+      "name": "Pulikulam",
+      "details": "The Pulikulam cattle breed name derives from Pulikulam village located in Sivagangai, Tamil Nadu. Also breed in Madhurai and Virudhunagar Districts of Tamil Nadu, is also known as “Palingu maadu”, “Mani maadu”, “Jallikattu maadu”, “Mattu maadu” and “Kilakattu maadu”. It is an indigenous breed of India",
+      "dlist": [
+        "This breed is commonly seen in cumbum valley of Madurai district in Tamil Nadu",
+        "Also known as Jallikattu madu, kidai madu, sentharai.",
+        "Small in size, usually grey or dark grey in colour.",
+        "Presence of reddish or brownish spots in muzzle, eyes, switch and back is the characteristic feature of this breed.",
+        "Typical backward curving horns of likeMysore type cattle."
+      ]
     },
     {
       "id": 4,
-      "link": "cow4.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c4.jpg",
+      "name": "Alambadi",
+      "details": "Alambadi is a breed of cattle that originated in the southern state of Tamil Nadu in India. In the past it was generally kept as a draught animal, although modern breeders are attempting to increase the milk output of this traditional breed. Alambadi breed is almost extinct and it is rare to find one",
+      "dlist": [
+        "Originated from Alambadi of Dharmapuri district in Tamilnadu.",
+        "Grey or dark grey in colour. ",
+        "White markings will be seen in forehead, limb and tail.",
+        "Horns are backward curving like Mysore cattle.",
+        "Horns are backward curving like Mysore cattle."
+      ]
     },
     {
       "id": 5,
-      "link": "cow5.webp",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c5.webp",
+      "name": "Umblachery",
+      "details": "The Umblachery is an Indian breed of zebuine cattle. It is distributed in the coastal plains of the districts of Nagapattinam, Tiruvarur and Tiruvarur in the state of Tamil Nadu in South India. It was bred for draught work, particularly in the rice paddies of the area",
+      "dlist": [
+        "It is otherwise called as Jathi madu, Mottai madu, Molai madu, Therkathi madu.",
+        "Originated inThanjavur, Thiruvarur and Nagappattinam districts of Tamil Nadu.",
+        "Suitable for wet ploughing and known for their strength and sturdiness.",
+        "The legs have white markings below the hocks like socks.",
+        "The practice of dehorning of bullocks is peculiar in Umblachery cattle."
+      ]
     },
     {
       "id": 6,
-      "link": "cow6.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c6.jpeg",
+      "name": "Khillari",
+      "details": "The Khillari is a cattle breed. It is a member of the Bos indicus sub-species, native to Satara, Kolhapur and Sangli regions in Maharashtra and Bijapur, Dharwad and Belagavi districts of Karnataka in India. The breed is well adapted to the area's tropical and drought-prone conditions",
+      "dlist": [
+        "Originated from Sholapur and Sitapur districts of Maharashtra.",
+        "Closely resembles Hallikar breed.",
+        "Grey-white in colour.",
+        "Long horns turn forwards in a peculiar fashion. The horns are generally black, sometimes pinkish",
+        "Bullocks are fast and powerful"
+      ]
     },
     {
       "id": 7,
-      "link": "cow1.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c7.jfif",
+      "name": "Amritmahal",
+      "details": "The breed is usually Grey in colour but the colour varies from white to almost black. White grey markings are present on face and dewlap in some animals. Dark shades on neck, shoulder, hump and hindquarters. Head is long and tapers towards muzzle",
+      "dlist": [
+        "Originated in Hassan, Chikmagalur and Chitradurga district of Karnataka.",
+        "Amiritmahals are grey cattle but their shade varies from almost white to near black.",
+        "The muzzle, feat and tail are usually black.",
+        "Horns are long and end in sharp black points",
+        " Cows are very poor milkers"
+      ]
     },
     {
       "id": 8,
-      "link": "cow2.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c8.jpg",
+      "name": "Hariana",
+      "details": "The breed was earlier known as ‘Hisar’ and ‘Hansi’ according to their place of origin.  The breeding tract of the breed includes Hisar, Rohtak, Sonepat, Gurgaon, Jind and Jhajjar districts of Haryana.   Typically, the breed is white or light grey coloured with coffin shaped skull. In bulls colour in between fore and hind quarters is relatively dark or dark grey",
+      "dlist": [
+        "It was originated from Rohtak, Hisar, Jind and Gurgaon districts of Haryana and also popular in Punjab, UP and parts of MP.",
+        "Horns are small.",
+        "The bullocks are powerful work animals.",
+        "Hariana cows are fair milkers yielding 600 to 800 kg of milk per lactation.",
+        "Good cows can produce even up to 1700 kilo grams of milk "
+      ]
     },
     {
       "id": 9,
-      "link": "cow3.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "link": "c9.jpg",
+      "name": "Krishna Valley",
+      "details": "The Krishna Valley is an Indian breed of draught cattle. It originated in the areas drained by the Krishna, Ghataprabha and Malaprabha rivers. It is a recently-created breed, bred in the late nineteenth century as a draught animal for agricultural purposes.",
+      "dlist": [
+        "Originated from black cotton soil of the water shed of the river Krishna in Karnataka and also found in border districts of Maharastra.",
+        "Animals are large, having a massive frame with deep, loosely built short body.",
+        "Tail almost reaches the ground.",
+        "The bullocks are powerful animals useful for slow ploughing, and valued for their good working qualities.",
+        "The average yield is about 900 kgs per lactation."
+      ]
     },
     {
       "id": 10,
       "link": "cow4.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
-    },
-    {
-      "id": 11,
-      "link": "cow5.webp",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
-    },
-    {
-      "id": 12,
-      "link": "cow6.jpg",
-      "name":"jalabula jangu",
-      "details":"thgu life a konguu haaa setting heyy jenukuna jenguu han jaalioo younguuu",
-      "dlist":["!","2","34","56","78"],
-      "price":10000
+      "name": " Deoni",
+      "details": "The Deoni is an Indian breed of draught cattle. It is named after the taluk of Deoni in the Latur district of Maharashtra state, and is distributed mainly in the Latur, Nanded, Osmanabad and Parbhani districts of the Marathwada region of Maharashtra, as well as the Bidar district of Karnataka",
+      "dlist": [
+        "This breed otherwise known as Dongerpati, Dongari, Wannera, Waghyd, Balankya, Shevera.",
+        "Originated in Western Andra Pradesh and also found in Marathwada region of Maharashtra state and adjoining part of Karnataka.",
+        "Body colour is usually spotted black and white.",
+        "Milk yield ranges from 636 to 1230 kgs per lactation.",
+        "Caving interval average is 447 days."
+      ]
     }
   ]
 }
