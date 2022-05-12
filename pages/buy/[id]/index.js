@@ -57,9 +57,9 @@ export default function ListProduct({ list, negolist }) {
                   <h1>{product[0].name}</h1>
                   <p>{product[0].detail}</p>
                   {product[0].dlist.map((a) => (
-                    <ol key={a}>
+                    <ul key={a}>
                       <li>{a}</li>
-                    </ol>
+                    </ul>
                   ))}
                   <h2>price:{product[0].price}</h2>
                   <Link className="buy-btn" href={`/buy/${product[0]._id}/negotiate?id=${product[0]._id}`}>

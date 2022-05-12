@@ -22,10 +22,19 @@
   .buy-body {
     background-color: #01e6a111;
     margin: 20px;
-    width:100%;
+    width: 100%;
+
     .buy-paper {
       margin: 10px;
       text-transform: capitalize;
+
+      ul {
+        margin-left: 20px;
+        li {
+          list-style-type: disc;
+        }
+      }
+
       button {
         border: none;
         outline: none;
@@ -66,9 +75,10 @@
   .nego-li {
     display: flex;
     flex-wrap: wrap;
+
     &>* {
       margin: 5px;
-      box-shadow: 0 0 10px rgb(155, 155, 155);
+      box-shadow: 0 0 10px rgba(155, 155, 155, 0.76);
       width: 300px;
     }
   }

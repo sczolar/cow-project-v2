@@ -1,7 +1,10 @@
-import { Context } from "../pages/_app";
+import { Context } from "../_app";
 import { useContext } from "react";
-import Cards from "../components/card";
+import Cards from "../../components/card";
 import Grid from "@mui/material/Grid";
+import Listcard from "../../components/listcard"
+import List from "../../db/list.json"
+
 
 export default function Home() {
   const { value, dispatch } = useContext(Context);
@@ -19,6 +22,12 @@ export default function Home() {
           className="breeds-types"
         >
           <h1>Breeds of Cattle and Buffalo</h1>
+          <div className="list-type-home">
+            {
+              List.list.map(a => <Listcard key={a.id} {...a} />)
+            }
+
+          </div>
         </Grid>
       </div>
 
